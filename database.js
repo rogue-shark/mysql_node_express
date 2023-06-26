@@ -30,10 +30,10 @@ export async function getNote(id) {
     const [rows] = await pool.query(`
     SELECT * 
     FROM notes
-    WHERE id = ${id}
-    `)
-    return rows
-}
+    WHERE id = ?
+    `, [id])
+    return rows[0]
+  }
 
 export async function createNote(title, contents) {
     const [result] = await pool.query(`
