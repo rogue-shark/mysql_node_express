@@ -1,0 +1,26 @@
+{
+  "name": "mysql_node_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogue-shark/mysql_node_express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogue-shark/mysql_node_express/issues"
+  },
+  "homepage": "https://github.com/rogue-shark/mysql_node_express#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "mysql2": "^3.4.2",
+    "uninstall": "^0.0.0"
+  }
+}
