@@ -1,9 +1,11 @@
 import express from 'express'
+import { getAllNotes, getNote, createNote } from './database.js';
 
 const app = express()
 
-app.get('/notes', (req, res) => {
-    res.send('Hello World!')
+app.get('/notes', async (req, res) => {
+    const notes = await getAllNotes()
+    res.send(notes)
 })
 
 //handle error
